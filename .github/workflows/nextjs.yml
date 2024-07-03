@@ -79,6 +79,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./out
+    my_job:
         env:
           OPENAI_API_KEY: sk-ZBs14bN8YxnmDO5U4b6771E878584e698686087c1925A39e
           BASE_URL: https://free.gpt.ge
