@@ -23,6 +23,10 @@ permissions:
 concurrency:
   group: "pages"
   cancel-in-progress: false
+env:
+  OPENAI_API_KEY: sk-ZBs14bN8YxnmDO5U4b6771E878584e698686087c1925A39e
+  BASE_URL: https://free.gpt.ge
+  CODE: hhz9770257656183,Lzc20090719
 
 jobs:
   # Build job
@@ -79,8 +83,6 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./out
-      - name: Create .env file
-        run: echo "${{ secrets.ENV_FILE }}" > .env
 
   # Deployment job
   deploy:
